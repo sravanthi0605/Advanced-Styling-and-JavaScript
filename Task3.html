@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3 – Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ApexPlanet Internship – Task 3</h1>
+  </header>
+
+  <section class="responsive-demo">
+    <h2>Responsive Design Demo</h2>
+    <p>This text and layout change on small screens using media queries.</p>
+  </section>
+
+  <section class="quiz-section">
+    <h2>JavaScript Quiz</h2>
+
+    <div id="quiz">
+      <p class="question-text">Q1: What does HTML stand for?</p>
+      <input type="radio" name="q1" value="wrong" /> HighText Machine Language<br />
+      <input type="radio" name="q1" value="correct" /> HyperText Markup Language<br />
+      <input type="radio" name="q1" value="wrong" /> Hyperloop Machine Language<br />
+      <p id="quizResult"></p>
+    </div>
+
+    <div id="quiz2">
+      <p class="question-text">Q2: What does CSS stand for?</p>
+      <input type="radio" name="q2" value="wrong" /> Colorful Style Sheets<br />
+      <input type="radio" name="q2" value="correct" /> Cascading Style Sheets<br />
+      <input type="radio" name="q2" value="wrong" /> Computer Style Syntax<br />
+      <p id="quizResult2"></p>
+    </div>
+
+    <div id="quiz3">
+      <p class="question-text">Q3: What does JS stand for?</p>
+      <input type="radio" name="q3" value="wrong" /> Java System<br />
+      <input type="radio" name="q3" value="correct" /> JavaScript<br />
+      <input type="radio" name="q3" value="wrong" /> Just Style<br />
+      <p id="quizResult3"></p>
+    </div>
+
+    <button onclick="checkAllQuizzes()">Submit All Answers</button>
+  </section>
+
+  <section class="api-section">
+    <h2>Quote of the Moment (from API)</h2>
+    <button onclick="fetchQuote()">Get Quote</button>
+    <p id="quoteBox">Click the button to load a quote...</p>
+  </section>
+
+  <section class="time-section">
+    <h2>Live Time</h2>
+    <p id="liveTime">Loading current time...</p>
+  </section>
+
+  <section class="theme-toggle">
+    <h2>Toggle Theme</h2>
+    <button onclick="toggleTheme()">Switch Theme</button>
+  </section>
+
+  <footer>
+    <p>Responsive layout with JavaScript interactivity and API usage</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
